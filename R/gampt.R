@@ -5,7 +5,7 @@
 #' @param  Time     Time input
 #' @param rainfall  Rainfall vector corresponding to Time input
 #' @param soil.para Soil hydraulic parameters:
-#'                  saturated water content initial water content, Ksat, Sav
+#'                  saturated water content(ths), initial water content(thi), Ksat, Sav
 #' @param smax      Maximum storage at the surface
 #' @param tol       Maximum tolerance for the absolute error in iterative solution of Chu's equation
 #'
@@ -18,7 +18,7 @@
 #' smax = 0.8, tstep = 0.1, tol = 0.000001)
 #'
 #' infil$water_balance
-
+#####
 gampt.infil<- function(Time, rainfall, soil.para, smax = 0.5, tstep, tol = 0.1e-5, ...){
 
       ths = soil.para$ths
